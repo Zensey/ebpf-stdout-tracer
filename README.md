@@ -1,15 +1,10 @@
 # ebpf-stdout-tracer
 
-Capture stdout of all processes using eBPF system call tracing.
+Capture stdout of all processes on Linux using eBPF system call tracing.
 
-## Install dependencies
-
-```sh
-sudo apt install bcc-tools libbcc-examples linux-headers-$(uname -r) python3-bcc
-```
+## Build
+    make build
 
 ## Tracing
+    sudo ./ebpf-stdout-tracer
 
-```sh
-sudo python main.py
-```
